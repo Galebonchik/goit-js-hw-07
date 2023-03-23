@@ -18,13 +18,20 @@ function createGallery(galleryItems) {
     return galleryItems.map(({preview, original, description}) => {
         return `
         <ul class="gallery">
-            <li>
-                <img src="${preview}" href="${original}"  data-source="${original}"  alt="${description}" class="gallery__image"></img>
+            <li class="gallery__item">
+            <a class="gallery__link" href="${original}">
+                <img
+                class="gallery__image"
+                src="${preview}"
+                data-source="${original}"
+                alt="${description}"
+                ></img>
+             </a>
             </li>
         </ul>`
     }).join(``);
 };
-
+ 
 paletteGalery.addEventListener(`click`, onImgClick);
 
 function onImgClick(event) {
@@ -42,6 +49,7 @@ function onImgClick(event) {
     if (event.keyCode === "Escape") {
       instance.close();
     }
+   
   
   });
   console.log(event.сode);
@@ -51,6 +59,7 @@ function blockStandartAction (event) {
   event.preventDefault()
 };
 
-
-
 console.log(galleryItems);
+
+
+ 
