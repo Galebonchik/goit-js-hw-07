@@ -46,13 +46,13 @@ function onImgClick(event) {
   
   instance.show();
 
-  paletteGalery.addEventListener("keydown", (event) => {
+  document.addEventListener("keydown", (event) => {
     if (event.сode === "Escape") {
       instance.close();
     } 
-    
+    console.log(event.сode);
   });
-  console.log(event.сode);
+  
 }
 
 function blockStandartAction (event) {
