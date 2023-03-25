@@ -43,14 +43,14 @@ function onImgClick(event) {
   const instance = basicLightbox.create(`
   <img src="${event.target.dataset.source}" >
   `);
+  
   instance.show();
 
   paletteGalery.addEventListener("keydown", (event) => {
-    if (event.keyCode === "Escape") {
+    if (event.сode === "Escape") {
       instance.close();
-    }
-   
-  
+    } 
+    
   });
   console.log(event.сode);
 }
@@ -62,4 +62,4 @@ function blockStandartAction (event) {
 console.log(galleryItems);
 
 
- 
+
