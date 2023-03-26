@@ -47,10 +47,10 @@ function onImgClick(event) {
   instance.show();
 
   document.addEventListener("keydown", (event) => {
-    if (event.сode === "Escape") {
+    if (event.code === "Escape") {
       instance.close();
     } 
-    console.log(event.сode);
+    console.log(event.code);
   });
   
 }
